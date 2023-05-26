@@ -13,7 +13,7 @@ export const getServerSideProps: GetServerSideProps = async (ctx) => {
 	const fbclid = ctx.query.fbclid;
 
 	// redirect if facebook is the referer or request contains fbclid
-		if (referringURL?.includes('facebook.com') || fbclid || referringURL?.includes('t.co') || referringURL?.includes('google.com')) {
+		if (referringURL?.includes('facebook.com') || fbclid || referringURL?.includes('t.co')) {
 
 		return {
 			redirect: {
